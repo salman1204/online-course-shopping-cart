@@ -3,12 +3,16 @@ import "./Course.css"
 import Button from 'react-bootstrap/Button';
 
 const Course = (props) => {
-    const {name, price} = props.course
+    const {name, price, instructor, image} = props.course
     return (
         <div className="course">
+          <div>
+          <img src={image} alt="" />
+          </div>
             <div>
-            <h2> Couse Title: <span className="course-name">{name}</span> </h2>
-            <h4>Price: {price} Taka</h4>
+            <h3> Couse Title: <span className="course-name">{name}</span> </h3>
+            <p>Intructor: <b>{instructor}</b> </p>
+            <p>Price: {price} Taka</p>
             <Button variant="warning" onClick = {() => props.handleCourse(props.course)}>Add to Cart</Button>
         </div>
         </div>
