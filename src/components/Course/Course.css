@@ -1,0 +1,13 @@
+.course {
+    display: flex;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    padding: 5px;
+    text-align: left;
+}
+
+.course-name {
+    color: blue;
+    font-weight: 400;
+}
